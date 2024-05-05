@@ -1,5 +1,5 @@
 <?php 
-$koneksi = new mysqli ('localhost','root','','penjualan_elektronik');
+$koneksi = new mysqli ('localhost','root','','exmountain');
 ?>
 <h2><center>DETAIL PEMBELIAN</center></h2>
 <?php 

@@ -1,7 +1,7 @@
 <?php 
 //koneksi ke database
 session_start();
-$koneksi = new mysqli('localhost','root','','penjualan_elektronik');
+$koneksi = new mysqli('localhost','root','','exmountain');
 if (!isset($_SESSION['admin'])) 
 {
 	echo "<script>alert('Anda Harus Login');</script>";

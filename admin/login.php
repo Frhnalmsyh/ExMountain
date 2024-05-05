@@ -1,6 +1,6 @@
 ﻿<?php 
 session_start();
-$koneksi= new mysqli ("localhost","root","","penjualan_elektronik");
+$koneksi= new mysqli ("localhost","root","","exmountain");
 ?>
 
 <!DOCTYPE html>
