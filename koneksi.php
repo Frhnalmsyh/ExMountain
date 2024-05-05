@@ -1,1 +1,1 @@
-<?php $koneksi = new mysqli('localhost','root','','exmountain'); ?>
+<?php $koneksi = new mysqli('localhost','root','','ExMountain'); ?>
