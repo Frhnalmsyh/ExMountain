@@ -1,7 +1,7 @@
 <?php 
 $koneksi = new mysqli ('localhost','root','','exmountain');
 ?>
-<h2><center>DETAIL PEMBELIAN</center></h2>
+<h2><center>DETAIL PEMESANAN</center></h2>
 <?php 
 $ambil = $koneksi->query("SELECT * FROM pembelian JOIN pelanggan
 	ON pembelian.id_pelanggan=pelanggan.id_pelanggan

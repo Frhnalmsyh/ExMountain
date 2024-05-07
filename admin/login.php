@@ -8,7 +8,7 @@ $koneksi= new mysqli ("localhost","root","","exmountain");
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login Admin : Computer Onshop</title>
+  <title>Login Admin : ExMountain</title>
   <!-- BOOTSTRAP STYLES-->
   <link href="assets/css/bootstrap.css" rel="stylesheet" />
   <!-- FONTAWESOME STYLES-->
@@ -24,7 +24,7 @@ $koneksi= new mysqli ("localhost","root","","exmountain");
     <div class="row text-center">
       <div class="col-md-12">
         <img src="favicon.ico" alt="">
-        <h5>( Login with your access to admin Computer OnShop )</h5>
+        <h5>( Login with your access to admin ExMountain)</h5>
         <br />
       </div>
     </div>

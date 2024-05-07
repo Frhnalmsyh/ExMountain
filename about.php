@@ -2,7 +2,7 @@
 	<section id="about" class="about scrollspy">
 		<div class="container">
 			<div class="row">
-				<h3 class="center light grey-text text-darken-3"> About Us</h3>
+				<h3 class="center light grey-text text-darken-3"> Tentang Kami</h3>
 				<div class="col m6 light">
 					<h5> ExMountain</h5>
 					<p id="co">Halo! Kami adalah tim ExMountain, yang siap membawa Anda pada petualangan mendaki gunung 

@@ -1,7 +1,7 @@
 <?php 
 //koneksi ke database
 session_start();
-include"koneksi.php";
+include "koneksi.php";
 if(!isset($_SESSION['pelanggan']) OR empty($_SESSION['pelanggan']))
 {
   echo "<script>alert('silahkan login');</script>";

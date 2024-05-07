@@ -3,7 +3,7 @@
 		<div class="cover">	
 			<ul class="slides">
 				<li>
-					<img src="img/1.jpg"> <!-- random image -->
+					<img src="img/bgberanda1.jpg"> <!-- random image -->
 					<div class="caption left-align">
 						<h3>ExMountain</h3>
 						<h5 class="light grey-text text-lighten-3">Tingkatkan pengalaman disetiap langkah</h5>

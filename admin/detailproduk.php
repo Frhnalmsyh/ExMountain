@@ -20,7 +20,7 @@ tr {
     border: none;
 }
 </style>
-<h2><center>DETAIL PRODUK</center></h2>
+<h2><center>DETAIL TRIP</center></h2>
 <br>  <br>	
  <table class="table">
  	<tr>

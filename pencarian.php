@@ -27,11 +27,11 @@ echo "</pre>";
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="shortcut icon" type="text/css" href="favicon.ico"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Home | Computer OnShop</title>
+	<title>Home | ExMountain</title>
 </head>
 <body>
 	<!-- NAVBAR -->
-	<?php include"navbar.php";?>
+	<?php include "navbar.php";?>
 	HAsil pencarian  : <?php echo $keyword; ?>
 	<div class="container">
 		<h1 class="center-align">Produk Terbaru</h1>
