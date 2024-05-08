@@ -24,12 +24,12 @@ if(empty($_SESSION['keranjang']) OR !isset($_SESSION['keranjang']))
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- My Css -->
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="shortcut icon" type="text/css" href="favicon.ico"/>
+	<link rel="shortcut icon" type="text/css" href="favicon.jpg"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<!--Navbar-->
-	<?php include"navbar.php" ?>
+	<?php include "navbar.php" ?>
 
 	<!-- BODY -->
 	<section class="konten">

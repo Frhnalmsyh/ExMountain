@@ -24,19 +24,19 @@ if (!isset($_SESSION['pelanggan']))
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- My Css -->
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="shortcut icon" type="text/css" href="favicon.ico"/>
+	<link rel="shortcut icon" type="text/css" href="favicon.jpg"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Nota Pembelian</title>
+	<title>Nota Pemesanan</title>
 </head>
 <body>
 	<!--Navbar-->
-	<?php include"navbar.php" ?>
+	<?php include "navbar.php" ?>
 
 	<section class="konten">
 		<div class="container">
 
 			<!-- nota disini copas saja dari nota yang ada di admin -->
-			<h2 align="center"><strong>NOTA PEMBELIAN</strong></h2>
+			<h2 align="center"><strong>NOTA PEMESANAN</strong></h2>
 			<?php 
 			$ambil=$koneksi->query("SELECT * FROM pembelian JOIN pelanggan
 				ON pembelian.id_pelanggan=pelanggan.id_pelanggan
@@ -69,8 +69,8 @@ if (!isset($_SESSION['pelanggan']))
 						<span class="white-text">
 							<div class="row">
 								<div class="col s4">
-									<h5><strong>Pembelian</strong></h5>
-									<strong>No. Pembelian :</strong> <?php echo $detail['id_pembelian']; ?><br>
+									<h5><strong>Pemesanan</strong></h5>
+									<strong>No. Pemesanan :</strong> <?php echo $detail['id_pembelian']; ?><br>
 									<strong>Tanggal :</strong> <?php echo date("d F Y",strtotime($detail['tanggal_pembelian'])); ?><br>
 									<strong>Total : Rp.</strong> <?php echo number_format($detail['total_pembelian']) ;?><br>	
 								</div>

@@ -42,13 +42,13 @@ if ($id_pelanggan_login !==$id_pelanggan_beli)
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- My Css -->
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="shortcut icon" type="text/css" href="favicon.ico"/>
+  <link rel="shortcut icon" type="text/css" href="favicon.jpg"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Pembayaran | Computer OnShop</title>
+  <title>Pembayaran | ExMountain</title>
 </head>
 <body>
   <!-- NAVBAR -->
-  <?php include"navbar.php"; ?>
+  <?php include "navbar.php"; ?>
   <div class="container">
     <h2>Konfrimasi Pembayaran</h2>
     <p>Kirim bukti pembayaran anda disini</p>
@@ -123,5 +123,5 @@ if ($id_pelanggan_login !==$id_pelanggan_beli)
   </div>
 </body>
 <!-- footer -->
-<?php include"footer.php" ;?>
+<?php include "footer.php" ;?>
 </html>

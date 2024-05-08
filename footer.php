@@ -1,8 +1,8 @@
 <footer class="page-footer" id="contact" style="background-color: #074A2A;" >
 	<div class="container" >
-		<div class="row" >
+		<div class="row" style="display: flex; align-items: center;"><img src="favicon.jpg" alt="Logo" style="height: 150px; margin-right: 10px; margin-bottom:0px;">
 			<div class="col l6 s12">
-				<h5 class="white-text">ExMountain</h5>
+			<h5 class="white-text"> ExMountain</h5>
 				<p class="grey-text text-lighten-4">Halo! Kami adalah tim ExMountain, yang siap membawa Anda pada petualangan mendaki gunung yang tak terlupakan.	</p>
 			</div>
 			<div class="col l3 s12">

@@ -3,7 +3,7 @@
     <nav>
         <div class="container">
             <div class="nav-wrapper">
-                <a href="index.php" class="brand-logo left"><img src="favicon.jpg" class="logo"></a>
+                <a href="index.php" class="brand-logo left"><img src="favicon.jpg" class="logo" style="width:80px;"></a>
                 <a href="#" data-target="mobile-nav" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down" style="font-weight: bold;">
                     <li>
