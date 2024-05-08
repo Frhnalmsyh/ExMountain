@@ -61,15 +61,15 @@ if(empty($_SESSION['keranjang']) OR !isset($_SESSION['keranjang']))
 							<td>Rp.<?php echo 	number_format($pecah["harga_produk"]); ?></td>
 							<td><?php echo 	$jumlah; ?></td>
 							<td>Rp.<?php echo 	number_format($subharga) ;?></td>
-							<td><a href="hapuskeranjang.php?id=<?php echo $id_produk ?>" class="btn btn-danger xs">hapus</a></td>
+							<td><a href="hapuskeranjang.php?id=<?php echo $id_produk ?>" class="btn btn-danger xs" style="background-color: #DC3227">hapus</a></td>
 						</tr>
 						<?php $nomor++; ?>
 					<?php 	endforeach ?>
 				</tbody>
 			</table>
 			<br>
-			<a href="index.php" class="waves-effect waves-light btn " style="margin-right: 10px;">Lanjutkan Belanja</a>
-			<a href="checkout.php" class="waves-effect waves-light btn">Checkout</a>
+			<a href="index.php" class="waves-effect waves-light btn " style="margin-right: 10px; background-color: #DC3227;">Lanjutkan Belanja</a>
+			<a href="checkout.php" class="waves-effect waves-light btn" style="background-color: #074A2A;">Checkout</a>
 		</div>
 		<br><br><br><br><br>
 		

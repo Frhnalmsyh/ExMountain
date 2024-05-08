@@ -69,7 +69,7 @@ section{
 	height: 500px;
 }
 .harga{
-	color: blue;
+	color: rgb(7, 74, 42);
 }
 .card-reveal p {
 	font-size: 12pt;
@@ -85,12 +85,23 @@ section{
 	color: black;
 }
 
-
 .card-title p {
-	 color: red;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
+	 color: rgb(255, 250, 250);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #2c2a2a, -1px 1px 0 #000, 1px 1px 0 #000;
+  margin-bottom: 0px;
+  font-size: 20px;
+};
+
 
 #contact {
 	margin-top: 100px;
+}
+
+.card-action a.btn {
+    border-radius: 10px; /* Sesuaikan dengan radius yang diinginkan */
+	background-color: rgb(7, 74, 42);
+}
+
+.active-nav {
+	background-color: green !important; /* Warna latar belakang hijau */
 }

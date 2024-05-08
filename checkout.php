@@ -36,7 +36,7 @@ if (!isset($_SESSION['keranjang']) OR empty($_SESSION['keranjang']))
 </head>
 <body>
 	<!--Navbar-->
-	<?php include"navbar.php" ?>
+	<?php include "navbar.php" ?>
 
 	<!-- TABEL KERANJANG -->
 	<section class="konten">

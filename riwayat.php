@@ -22,17 +22,17 @@
  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  	<!-- My Css -->
  	<link rel="stylesheet" type="text/css" href="style.css">
- 	<link rel="shortcut icon" type="text/css" href="favicon.ico"/>
+ 	<link rel="shortcut icon" type="text/css" href="favicon.jpg"/>
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 	<title>Home | Computer OnShop</title>
+ 	<title>Riwayat | ExMountain</title>
  </head>
 
  <!-- navbar -->
- <?php 	include"navbar.php" ?>
+ <?php 	include "navbar.php" ?>
  <!-- <pre><?php 	print_r($_SESSION) ?></pre> -->
  <section class="riwayat">
  	<div class="container">	
- 		<h3 align="center">Riwayat Belanja <?php echo 	$_SESSION["pelanggan"]["nama_pelanggan"] ?></h3>
+ 		<h3 align="center">Riwayat Pemesanan <?php echo 	$_SESSION["pelanggan"]["nama_pelanggan"] ?></h3>
  		<table class="table striped centered">
  			<thead>	
  				<tr>
@@ -77,11 +77,11 @@
  		</tbody>
  	</table>
  	<hr> <br> <br><br>
- 	<a class="waves-effect waves-light teal btn right"href="index.php"> Kembali</a> <br> <br> <br>
+ 	<a class="waves-effect waves-light teal btn right" style="background-color:#074A2; border-radius:8px;" href="index.php" > Kembali</a> <br> <br> <br>
  </div>
 </section>
 <!-- footer -->
-<?php include"footer.php" ;?>
+<?php include "footer.php" ;?>
 
  
 

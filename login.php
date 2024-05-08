@@ -14,12 +14,12 @@ include 'koneksi.php';
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- My Css -->
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="shortcut icon" type="text/css" href="favicon.ico"/>
+	<link rel="shortcut icon" type="text/css" href="favicon.jpg"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>LOGIN | Computer Onshop</title>
+	<title>Login | ExMountain</title>
 	<body>
 		<!--Navbar-->
-		<?php include"navbar.php" ?>
+		<?php include "navbar.php" ?>
 		<br>	
 		<div class="container">	
 			<div class="row">
@@ -29,16 +29,16 @@ include 'koneksi.php';
 						<span class="white-text">
 							<form method="post">
 								<div class="input-field">
-									<i class="material-icons prefix">email</i>
+									<i class="material-icons prefix" style="color:#074A2A; border-radius:8px;">email</i>
 									<input id="icon_email" type="email" class="validate" name="email" required autocomplete="off">
-									<label for="icon_email">Email</label>
+									<label for="icon_email" >Email</label>
 								</div>
 								<div class="input-field">
 									<i class="material-icons prefix">lock</i>
 									<input id="icon_lock" type="password" required class="validate" name="password">
 									<label for="icon_lock">Password</label>
 								</div>	
-								<button class="btn right" name="login">Login</button>
+								<button class="btn right" name="login" style="background-color:#074A2A; border-radius:8px;">Login</button>
 							</form>
 						</span>
 					</div>

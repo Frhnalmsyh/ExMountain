@@ -1,6 +1,6 @@
 <!-- searching -->
 	<div class="cover" id="belanja">
-		<img src="img/4.jpg" class="gambar">
+		<img src="img/bgsearch.jpg" class="gambar">
 		<div class="container" id="cari">
 			<nav>
 				<div class="nav-wrapper">

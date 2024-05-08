@@ -1,12 +1,12 @@
-<footer class="page-footer teal" id="contact">
-	<div class="container">
-		<div class="row">
+<footer class="page-footer" id="contact" style="background-color: #074A2A;" >
+	<div class="container" >
+		<div class="row" >
 			<div class="col l6 s12">
-				<h5 class="white-text">Computer Onshop</h5>
-				<p class="grey-text text-lighten-4">Kami Adalah pinonner e-commerce di Indonesia. Penyedia Komponen-komponen komputer terlengkap, tercepat dan terpercaya lebih dari 5 Tahun menamani anda. </p>
+				<h5 class="white-text">ExMountain</h5>
+				<p class="grey-text text-lighten-4">Halo! Kami adalah tim ExMountain, yang siap membawa Anda pada petualangan mendaki gunung yang tak terlupakan.	</p>
 			</div>
 			<div class="col l3 s12">
-				<h5 class="white-text">Contact Us</h5>
+				<h5 class="white-text"> Kontak kami</h5>
 				<ul>
 					<li><a class="white-text" href="https://www.youtube.com/@kaseps8304/videos"><i class="fa fa-envelope">  | Email</i></a></li>
 					<li><a class="white-text" href="https://www.youtube.com/@kaseps8304/videos"><i class="fa fa-youtube-play">   | Youtube</i></a></li>
@@ -14,7 +14,7 @@
 				</ul>
 			</div>
 			<div class="col l3 s12">
-				<h5 class="white-text">Contact Us</h5>
+				<h5 class="white-text">Sosial Media</h5>
 				<ul>
 					<li><a class="white-text" href="https://www.youtube.com/@kaseps8304/videos"><i class="fa fa-facebook-official"> | Facebook</i></a></li>
 					<li><a class="white-text" href="https://www.youtube.com/@kaseps8304/videos"><i class="fa fa-instagram"> | Instagram</i></a></li>
@@ -26,7 +26,7 @@
 	</div>
 	<div class="footer-copyright">
 		<div class="container">
-			©2023<a class="brown-text text-lighten-3" href="https://www.youtube.com/@kaseps8304/videos"> Kasep_Code</a>
+			©2023<a class="brown-text text-lighten-3" href="https://www.youtube.com/@kaseps8304/videos"> @ExMountain</a>
 		</div>
 	</div>
 </footer>

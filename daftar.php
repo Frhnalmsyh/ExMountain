@@ -1,7 +1,7 @@
 <?php 
 //koneksi ke database
 session_start();
-$koneksi = new mysqli('localhost','root','','penjualan_elektronik');
+$koneksi = new mysqli('localhost','root','','exmountain');
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,15 +15,15 @@ $koneksi = new mysqli('localhost','root','','penjualan_elektronik');
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- My Css -->
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="shortcut icon" type="text/css" href="favicon.ico"/>
+	<link rel="shortcut icon" type="text/css" href="favicon.jpg"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Home | Computer OnShop</title>
+	<title>Daftar | ExMountain</title>
 </head>
 <!-- NAVBAR -->
-<?php include"navbar.php"; ?>
+<?php include "navbar.php"; ?>
 
 <div class="container">
-	<center id='login'><h2> DAFTAR AKUN BARU</h2></center>
+	<center id='login'><h2 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);"> DAFTAR AKUN BARU</h2></center>
 
 	<div class="row">
 		<form method="post"	>
@@ -53,7 +53,7 @@ $koneksi = new mysqli('localhost','root','','penjualan_elektronik');
 					<input id="icon_telephone" type="number" required class="validate" name="telepon">
 					<label for="icon_telephone">Telephone</label>
 				</div>
-					<button  class="btn waves-effect waves-light right" type="submit" name="daftar">Daftar
+					<button  class="btn waves-effect waves-light right" type="submit" name="daftar" style="background-color:#074A2A; border-radius:8px;">Daftar
 						<i class="material-icons right">send</i>
 					</button>
 			</div>

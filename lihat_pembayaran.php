@@ -46,12 +46,12 @@
  	<link rel="stylesheet" type="text/css" href="style.css">
  	<link rel="shortcut icon" type="text/css" href="favicon.ico"/>
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 	<title>Lihat Pembayaran | Computer OnShop</title>
+ 	<title>Lihat Pembayaran | ExMountain</title>
  </head>
 
  <body>
  	<!-- navbar -->
- 	<?php 	include"navbar.php" ?>
+ 	<?php 	include "navbar.php" ?>
  	<div class="container">
  		<center><h3>Lihat Pembayaran</h3></center> <br>	<br>	
  		<table class="table centered highlight hoverable responsive-table">

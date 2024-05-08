@@ -1,4 +1,4 @@
-<?php include'koneksi.php';?>
+<?php include 'koneksi.php';?>
 <?php 
 $keyword= $_GET["keyword"];
 
@@ -25,7 +25,7 @@ echo "</pre>";
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- My Css -->
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="shortcut icon" type="text/css" href="favicon.ico"/>
+	<link rel="shortcut icon" type="text/css" href="favicon.jpg"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Home | ExMountain</title>
 </head>
@@ -34,7 +34,7 @@ echo "</pre>";
 	<?php include "navbar.php";?>
 	HAsil pencarian  : <?php echo $keyword; ?>
 	<div class="container">
-		<h1 class="center-align">Produk Terbaru</h1>
+		<h1 class="center-align" style="font-family: Poppins; font-size: 36px;">Produk Terbaru</h1>
 		<div class="row">
 			<?php 	foreach ($semuadata as $key => $value) : ?>
 				<div class="grid-example col m3 s12">
