@@ -1,4 +1,4 @@
-<h2><center>DATA PEMBAYARAN</center></h2> <br>
+<h2 style="color:#074A2A;"><center>DATA PEMBAYARAN</center></h2> <br>
 <?php 
 // mendapatkan id_pemebelian dari url
 $id_pembelian = $_GET['id'];
@@ -40,7 +40,7 @@ $detail= $ambil->fetch_assoc();
 
 <form method="post">
 	<div class="form-group">
-		<label> No Resi Pengiriman</label>
+		<label> Link Grup Pemesanan</label>
 		<input type="text" class="form-control" name="resi">
 	</div>
 	<div class="form-group">
@@ -51,8 +51,7 @@ $detail= $ambil->fetch_assoc();
 				<option value="Sudah Krim Pembayaran">Sudah Kirim Pembayaran</option>
 				<option value="Lunas">Lunas</option>
 				<option value="Batal">Batal</option>
-				<option value="Barang Dikirim">Barang Dikirim</option>
-				<option value="Barang Sudah Sampai">Barang Sudah Sampai</option>
+				
 		</select>
 	</div>
 			<a href="index.php?halaman=pembelian" class="btn btn-danger">KEMBALI</a>

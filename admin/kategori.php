@@ -1,4 +1,4 @@
-<h2><center>DATA KATEGORI</center></h2>
+<h2 style="color:#074A2A;"<center>DATA KATEGORI</center></h2>
 <br>
 <?php 
 $semuadata = array();

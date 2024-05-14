@@ -1,7 +1,7 @@
 <?php 
 $koneksi = new mysqli ('localhost','root','','exmountain');
 ?>
-<h2><center>DETAIL PEMESANAN</center></h2>
+<h2 style="color:#074A2A;"><center>DETAIL PEMESANAN</center></h2>
 <?php 
 $ambil = $koneksi->query("SELECT * FROM pembelian JOIN pelanggan
 	ON pembelian.id_pelanggan=pelanggan.id_pelanggan
@@ -19,8 +19,8 @@ $detail=$ambil->fetch_assoc();
 <br>
 <div class="row">
 	<div class="col-md-4">
-		<h3><strong>Pembelian</strong></h3>
-		<strong>No. Pembelian :</strong> <?php echo $detail['id_pembelian']; ?><br>
+		<h3><strong>Pemesanan</strong></h3>
+		<strong>No. Pemesanan :</strong> <?php echo $detail['id_pembelian']; ?><br>
 		<strong>Tanggal :</strong> <?php echo date("d F Y",strtotime($detail['tanggal_pembelian'])); ?><br>
 		<strong>Total : Rp.</strong> <?php echo number_format($detail['total_pembelian']) ;?><br>	
 	</div>
@@ -31,9 +31,7 @@ $detail=$ambil->fetch_assoc();
 		<strong>Email :</strong> <?php echo $detail['email_pelanggan'] ;?><br>	
 	</div>
 	<div class="col-md-4">
-		<h3><strong>Pengiriman</strong></h3>
-		<strong>Alamat :</strong> <?php echo $detail['tipe'];?> <?php echo 	$detail['distrik'] ;?> <?php echo $detail['provinsi']; ?><br>
-		<strong>Ekspedisi : </strong> <?php echo $detail['ekspedisi'] ;?> <?php echo $detail['paket'] ?> <?php echo $detail['estimasi'] ?><br>
+		<h3><strong>Lainnya</strong></h3>
 		<strong>Alamat :</strong>  <?php echo $detail['alamat_pengiriman']; ?>
 	</div>
 </div>

@@ -17,7 +17,7 @@ if (!isset($_SESSION['admin']))
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="shortcut icon" href="../favicon.jpg" alt="logo">
   <title>Admin : ExMountain</title>
   <!-- BOOTSTRAP STYLES-->
   <link href="assets/css/bootstrap.css" rel="stylesheet" />
@@ -34,7 +34,7 @@ if (!isset($_SESSION['admin']))
 </head>
 <body>
     <div id="wrapper">
-        <nav class="navbar navbar-default navbar-cls-top" style="margin-bottom: 0">
+        <nav class="navbar navbar-default navbar-cls-top" style="margin-bottom: 0; background-color:#074A2A;">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -42,12 +42,12 @@ if (!isset($_SESSION['admin']))
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">admin</a> 
+                <a class="navbar-brand" href="index.php" style="background-color:#074A2A;">admin</a> 
             </div>
             <?php $ambil=$koneksi->query('SELECT * FROM admin'); ?>
             <?php while($pecah=$ambil->fetch_assoc()){ ?>
                 <span class="navbar-text" style="color: white; width: 1000px;font-size: 16px;">
-                    <marquee behavior="scroll" direction="right">Selamat datang, <?php echo $pecah['nama_lengkap'] ; ?> </marquee>
+                    <marquee behavior="scroll" direction="right">Selamat datang di Laman Admin ExMountain</marquee>
                 </span>
                 <div style="color: white; padding: 15px 50px 5px 0px; float: right; font-size: 16px;">
                     Last access : <?php echo date("d M Y H:i:s", time()+60*60*5) ;?> &nbsp; <a href="index.php?halaman=logout" class="btn btn-danger square-btn-adjust">Logout</a> </div>
@@ -56,19 +56,19 @@ if (!isset($_SESSION['admin']))
             <!-- /. NAV TOP  -->
             <nav class="navbar-default navbar-side" role="navigation">
                 <div class="sidebar-collapse">
-                    <ul class="nav" id="main-menu">
-                        <li class="text-center">
-                            <img src="assets/img/find_user.png" class="user-image img-responsive"/>                        </li>
+                    <ul class="nav" id="main-menu" >
+                        <li class="text-center" >
+                            <img src="favicon.jpg" class="user-image img-responsive"/>                        </li>
 <li>
-                          <a href="index.php"><i class="fa fa-dashboard"></i> Home</a>                        </li>
+                          <a href="index.php"style="background-color:#074A2A;"><i class="fa fa-dashboard" ></i> Home</a>                        </li>
 <li>
-                          <a href="index.php?halaman=kategori"><i class="fa fa-tag"></i> kategori</a>                        </li>
+                          <a href="index.php?halaman=kategori" style="background-color:#074A2A;"><i class="fa fa-tag"></i> kategori</a>                        </li>
 <li>
-                          <a href="index.php?halaman=produk"><i class="fa fa-tablet"></i> Produk</a>                        </li>
-<li><a href="index.php?halaman=pembelian"><i class="fa fa-shopping-cart"></i> Pembelian</a></li>
-<li><a href="index.php?halaman=laporan_pembelian"><i class="fa fa-file"></i> Laporan</a></li>
-<li><a href="index.php?halaman=pelanggan"><i class="fa fa-user"></i> Pelanggan</a></li>
-<li><a href="index.php?halaman=logout"><i class="fa fa-sign-out"></i> Logout</a></li>               
+                          <a href="index.php?halaman=produk" style="background-color:#074A2A;"><i class="fa fa-tablet"></i> Produk</a>                        </li>
+<li><a href="index.php?halaman=pembelian" style="background-color:#074A2A;"><i class="fa fa-shopping-cart"></i> Pemesanan</a></li>
+<li><a href="index.php?halaman=laporan_pembelian" style="background-color:#074A2A;"><i class="fa fa-file"></i> Laporan</a></li>
+<li><a href="index.php?halaman=pelanggan" style="background-color:#074A2A;"><i class="fa fa-user"></i> Pelanggan</a></li>
+<li><a href="index.php?halaman=logout"style="background-color:#074A2A;"><i class="fa fa-sign-out"></i> Logout</a></li>               
 </div>
 
                 </nav>  

@@ -34,7 +34,7 @@ include 'koneksi.php';
 									<label for="icon_email" >Email</label>
 								</div>
 								<div class="input-field">
-									<i class="material-icons prefix">lock</i>
+									<i class="material-icons prefix" style="color:#074A2A;">lock</i>
 									<input id="icon_lock" type="password" required class="validate" name="password">
 									<label for="icon_lock">Password</label>
 								</div>	

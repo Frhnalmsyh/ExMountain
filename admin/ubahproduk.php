@@ -48,10 +48,6 @@ while ($tiap = $ambil->fetch_assoc())
 		<input type="number" name="harga" class="form-control" value="<?= $pecah['harga_produk']; ?>">
 	</div>
 	<div class="form-group">
-		<label>Berat (Gr)</label>
-		<input type="number" name="berat" class="form-control" value="<?= $pecah['berat_produk']; ?>">
-	</div>
-	<div class="form-group">
 		<img src="../foto_produk/<?= $pecah['foto_produk'] ?>" width="200">
 	</div>
 	<div class="form-group">
@@ -78,7 +74,6 @@ while ($tiap = $ambil->fetch_assoc())
 			$koneksi->query("UPDATE produk SET 
 				nama_produk='$_POST[nama]', 
 				harga_produk='$_POST[harga]',
-				berat_produk='$_POST[berat]',
 				foto_produk='$namafoto', 
 				deskripsi_produk='$_POST[deskripsi]',
 				id_kategori='$_POST[id_kategori]'
@@ -86,8 +81,7 @@ while ($tiap = $ambil->fetch_assoc())
 		}else {
 			$koneksi->query("UPDATE produk SET 
 				nama_produk='$_POST[nama]', 
-				harga_produk='$_POST[harga]',
-				berat_produk='$_POST[berat]', 
+				harga_produk='$_POST[harga]', 
 				deskripsi_produk='$_POST[deskripsi]',
 				id_kategori='$_POST[id_kategori]'
 				WHERE id_produk='$_GET[id]'") ;

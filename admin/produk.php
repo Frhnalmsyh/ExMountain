@@ -4,7 +4,7 @@
      text-align: center;
 }
   </style>
-<h2><center>DATA PRODUK</center></h2>
+<h2 style="color:#074A2A;"><center>DATA PRODUK</center></h2>
 <br>
 <a href="index.php?halaman=tambahproduk" class="btn btn-primary">TAMBAH DATA</a><br><br>
 <table class='table table-bordered ' align="center">
@@ -14,7 +14,6 @@
 			<th><center>KATEGORI</center></th>
 			<th><center>NAMA</center></th>
 			<th><center>HARGA</center></th>
-			<th><center>BERAT</center></th>
 			<th><center>FOTO</center></th>
 			<th><center>STOK PRODUK</center></th>
 			<th><center>AKSI</center></th> 
@@ -37,7 +36,6 @@
 				<td><?php echo $row['nama_kategori'] ;?></td>
 				<td><?php echo $row['nama_produk'] ;?></td>
 				<td>Rp.<?php echo number_format($row['harga_produk']) ; ?></td>
-				<td><?php echo $row['berat_produk'] ; ?></td>
 				<td><img src="../foto_produk/<?php echo $row['foto_produk'] ;?>" width="100"></td>
 				<td><?php echo $row['stok_produk']; ?></td>
 				<td>

@@ -27,7 +27,7 @@ if (isset($_POST["kirim"]))
      text-align: center;
 }
   </style>
-<h2><center>LAPORAN PEMBELIAN <?php if (isset($_POST["kirim"])): ?>
+<h2><center>LAPORAN PEMESANAN <?php if (isset($_POST["kirim"])): ?>
 	<?php echo $tgl_mulai ?> SAMPAI <?php echo $tgl_selesai ?>
 <?php endif ?></center></h2>	
 <hr>
@@ -54,8 +54,6 @@ if (isset($_POST["kirim"]))
 				<option value="Sudah Kirim Pembayaran">Sudah Kirim Pembayaran</option>
 				<option value="Lunas">Lunas</option>
 				<option value="Batal">Batal</option>
-				<option value="Barang Dikirim">Barang Dikirim</option>
-				<option value="Barang Sudah Sampai">Barang Sudah Sampai</option>
 			</select>
 		</div>	
 		<div class="col-md-2">

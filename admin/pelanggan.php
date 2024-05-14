@@ -1,4 +1,4 @@
-<h2><center>DATA PELANGGAN</center></h2>
+<h2 style="color:#074A2A;"><center>DATA PELANGGAN</center></h2>
 <br>
 <table class='table table-bordered'>
 	<thead>

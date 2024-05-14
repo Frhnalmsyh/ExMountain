@@ -17,13 +17,13 @@ $koneksi= new mysqli ("localhost","root","","exmountain");
   <link href="assets/css/custom.css" rel="stylesheet" />
   <!-- GOOGLE FONTS-->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-<link rel="shortcut icon" href="../favicon.ico">
+<link rel="shortcut icon" href="../favicon.jpg">
 </head>
 <body>
   <div class="container">
     <div class="row text-center">
       <div class="col-md-12">
-        <img src="favicon.ico" alt="">
+        <img src="favicon.jpg" alt="" style="height: 250px;">
         <h5>( Login with your access to admin ExMountain)</h5>
         <br />
       </div>

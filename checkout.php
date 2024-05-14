@@ -30,7 +30,7 @@ if (!isset($_SESSION['keranjang']) OR empty($_SESSION['keranjang']))
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- My Css -->
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="shortcut icon" type="text/css" href="favicon.ico"/>
+	<link rel="shortcut icon" type="text/css" href="favicon.jpg"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="assets/js/jquery-1.10.2.js"></script>
 </head>
@@ -63,10 +63,9 @@ if (!isset($_SESSION['keranjang']) OR empty($_SESSION['keranjang']))
 						$pecah = $ambil->fetch_assoc();
 						$subharga =$pecah["harga_produk"]*$jumlah;
 						// subharga diperoleh dari berat produk x jumlah
-						$subberat = $pecah["berat_produk"]*$jumlah;
-						//total berat
+						
 
-						$totalberat+=$subberat;
+						
 
 						// echo "<pre>";
 						// print_r($pecah);
@@ -105,62 +104,11 @@ if (!isset($_SESSION['keranjang']) OR empty($_SESSION['keranjang']))
 							['telepon_pelanggan'] ?>">		
 						</div>	
 						<div class="input-field col s12">
-							<label>Alamat Lengkap Pengiriman</label>
-							<textarea name="alamat_pengiriman" id="" required cols="30" rows="10" class="materialize-textarea" placeholder="masukkan alamat pengiriman(termasuk kode pos)"></textarea><br><br>
+							<label>Alamat Lengkap Domisili Sekarang</label>
+							<textarea name="alamat_pengiriman" id="" required cols="30" rows="10" class="materialize-textarea" placeholder="masukkan alamat domisili(termasuk kode pos)"></textarea><br><br>
 						</div>
+						
 						<div class="row">
-							<div class="col s12 m3">
-								<label>Pilih Provinsi</label>
-								<select class="browser-default" name="nama_provinsi" required >
-								</select>
-							</div>
-							<div class="col s12 m3">
-								<label>Pilih Distrik</label>
-								<select class="browser-default" name="nama_distrik" required >
-								</select>
-							</div>
-							<div class="col s12 m3">
-								<label>Pilih Ekspedisi</label>
-								<select class="browser-default" name="nama_ekspedisi" required >
-								</select>
-							</div>
-							<div class="col s12 m3">
-								<label>Pilih paket</label>
-								<select class="browser-default" name="nama_paket" required >
-								</select>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col s12 m1">
-								<input readonly type="text" placeholder="berat" name="total_berat" value="<?php echo $totalberat; ?>">
-							</div>
-							<div class="col s12 m3">
-								<input readonly type="text" placeholder="nama provinsi" name="provinsi">
-							</div>
-							<div class="col s12 m2">
-								<input readonly  type="text" placeholder="nama distrik" name="distrik">
-							</div>
-							<div class="col s12 m2">
-								<input readonly type="text" placeholder="kota/kabupaten" name="tipe">
-							</div>
-							<div class="col s12 m1">
-								<input readonly  type="text" placeholder="kodepos" name="kodepos">
-							</div>
-							<div class="col s12 m1">
-								<input readonly type="text" placeholder="Ekspedisi" name="ekspedisi">
-							</div>
-							<div class="col s12 m2">
-								<input readonly type="text" placeholder="Kode paket" name="paket">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col s12 m3">
-								<input readonly type="text" placeholder="Harga Ongkir" name="ongkir">
-							</div>
-							<div class="col s12 m3">
-								<input readonly type="text" placeholder="Lama Pengiriman" name="estimasi">
-							</div>
 							<div class="col s12 m3">
 								<button class="btn btn-primary" name="checkout">Checkout</button>
 							</div>
@@ -173,23 +121,12 @@ if (!isset($_SESSION['keranjang']) OR empty($_SESSION['keranjang']))
 						$id_pelanggan= $_SESSION['pelanggan']['id_pelanggan'];
 						$tanggal_pembelian = date('Y-m-d');
 						$alamat_pengiriman = $_POST['alamat_pengiriman'];
-						$totalberat=$_POST["totalberat"];            
-						$provinsi=$_POST["provinsi"];            
-						$distrik=$_POST["distrik"];              
-						$tipe=$_POST["tipe"];                    
-						$kodepos=$_POST["kodepos"];                 
-						$ekspedisi=$_POST["ekspedisi"];               
-						$paket=$_POST["paket"];               
-						$ongkir=$_POST["ongkir"];             
-						$estimasi=$_POST["estimasi"];	  
-
-
 						$total_pembelian = $totalbelanja + $ongkir; 
 
 				//1. menyimpan data ke tabel pembelian
 						$koneksi->query(" INSERT INTO pembelian (
-							id_pelanggan,tanggal_pembelian,total_pembelian,alamat_pengiriman,totalberat,provinsi,distrik,tipe,kodepos,ekspedisi,paket,ongkir,estimasi)
-							VALUES ('$id_pelanggan','$tanggal_pembelian','$total_pembelian','$alamat_pengiriman','$totalberat','$provinsi','$distrik','$tipe','$kodepos','$ekspedisi','$paket','$ongkir','$estimasi') ");
+							id_pelanggan,tanggal_pembelian,total_pembelian,alamat_pengiriman)
+							VALUES ('$id_pelanggan','$tanggal_pembelian','$total_pembelian','$alamat_pengiriman') ");
 
 				// mendapatkan id_pembelian barusan terjadi
 						$id_pembelian_barusan = $koneksi->insert_id;
@@ -202,12 +139,9 @@ if (!isset($_SESSION['keranjang']) OR empty($_SESSION['keranjang']))
 
 							$nama = $perproduk['nama_produk'];
 							$harga = $perproduk['harga_produk'];
-							$berat = $perproduk['berat_produk'];
-
-							$subberat = $perproduk['berat_produk']*$jumlah;
 							$subharga = $perproduk['harga_produk']*$jumlah;
-							$koneksi->query("INSERT INTO pembelian_produk (id_pembelian,id_produk,nama,harga,berat,subberat,subharga,jumlah)
-								VALUES ('$id_pembelian_barusan','$id_produk','$nama','$harga','$berat','$subberat','$subharga','$jumlah')");	
+							$koneksi->query("INSERT INTO pembelian_produk (id_pembelian,id_produk,nama,harga,subharga,jumlah)
+								VALUES ('$id_pembelian_barusan','$id_produk','$nama','$harga','$subharga','$jumlah')");	
 
 								//skrip update stok
 							$koneksi->query("UPDATE produk SET stok_produk= stok_produk -$jumlah

@@ -20,7 +20,7 @@ tr {
     border: none;
 }
 </style>
-<h2><center>DETAIL TRIP</center></h2>
+<h2 style="color:#074A2A;"><center>DETAIL PRODUK</center></h2>
 <br>  <br>	
  <table class="table">
  	<tr>
@@ -35,10 +35,6 @@ tr {
  	<tr>
  		<th>Harga</th>
  		<td>Rp. <?php echo number_format($detailproduk["harga_produk"]); ?></td>
- 	</tr>
- 	<tr>
- 		<th>Berat</th>
- 		<td><?php echo $detailproduk["berat_produk"] ;?></td>
  	</tr>
  	<tr>
  		<th>Deskripsi</th>

@@ -1,4 +1,4 @@
- <h2><center>DATA PEMBELIAN</center></h2>
+ <h2 style="color:#074A2A;"><center>DATA PEMESANAN</center></h2>
 <br>
 <table class="table table-bordered">
 	<thead>
@@ -6,7 +6,7 @@
 			<th><center>NO</center></th>
 			<th><center>NAMA PELANGGAN</center></th>
 			<th><center>TANGGAL</center></th>
-			<th><center>STATUS PENGIRIMAN</center></th>
+			<th><center>STATUS PEMESANAN</center></th>
 			<th><center>TOTAL</center></th>
 			<th><center>AKSI</center></th>	
 		</tr>

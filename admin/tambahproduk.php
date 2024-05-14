@@ -34,10 +34,7 @@ while($tiap = $ambil->fetch_assoc())
 		<label>Harga (Rp)</label>
 		<input type="number" class="form-control" name="harga">
 	</div>
-	<div class="from-group">
-		<label>Berat (Gr)</label>
-		<input type="number" class="form-control" name="berat">
-	</div>
+	
 	<div class="from-group">
 		<label>Deskripsi</label>
 		<textarea class="form-control" name="deskripsi" rows="10"></textarea>
@@ -63,8 +60,8 @@ while($tiap = $ambil->fetch_assoc())
 		$lokasilokasifoto = $_FILES['foto']['tmp_name'];
 		move_uploaded_file($lokasilokasifoto[0], "../foto_produk/".$namanamafoto[0]);
 		$koneksi->query("INSERT INTO produk
-			(nama_produk,harga_produk,berat_produk,foto_produk,deskripsi_produk,stok_produk,id_kategori) 
-			VALUES('$_POST[nama]','$_POST[harga]','$_POST[berat]','$namanamafoto[0]','$_POST[deskripsi]','$_POST[stok_produk]','$_POST[id_kategori]') ");
+			(nama_produk,harga_produk,foto_produk,deskripsi_produk,stok_produk,id_kategori) 
+			VALUES('$_POST[nama]','$_POST[harga]','$namanamafoto[0]','$_POST[deskripsi]','$_POST[stok_produk]','$_POST[id_kategori]') ");
 
 		//mendapatkan id_produk barusan
 		$id_produk_barusan = $koneksi->insert_id;
@@ -76,7 +73,7 @@ while($tiap = $ambil->fetch_assoc())
 			move_uploaded_file($tiap_lokasi, "../foto_produk/".$tiap_nama);
 
 			// simpan ke mysql (tapi kita perlu tau id_produknya berapa?)
-			$koneksi->query("INSERT INTO produk_foto (id_produk,nama_produk_foto)
+			$koneksi->query("INSERT INTO foto_produk (id_produk,nama_produk,foto_produk)
 				VALUES('$id_produk_barusan','$tiap_nama')");
 		}
 

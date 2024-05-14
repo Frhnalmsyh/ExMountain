@@ -81,9 +81,7 @@ if (!isset($_SESSION['pelanggan']))
 									<strong>Email :</strong> <?php echo $detail['email_pelanggan'] ;?><br>	
 								</div>
 								<div class="col s4">
-									<h5><strong>Pengiriman</strong></h5>
-									<strong>Alamat :</strong> <?php echo $detail['tipe'];?> <?php echo 	$detail['distrik'] ;?> <?php echo $detail['provinsi']; ?> <br>
-									<strong>Ekspedisi : </strong> <?php echo $detail['ekspedisi'] ;?> <?php echo $detail['paket'] ?> <?php echo 	$detail['estimasi'] ?><br>
+									<h5><strong>Lainnya</strong></h5>
 									<strong>Alamat : <?php echo $detail['alamat_pengiriman']; ?></strong>
 								</div>
 							</div>
@@ -99,9 +97,9 @@ if (!isset($_SESSION['pelanggan']))
 						<th>NO</th>
 						<th>NAMA PRODUK</th>
 						<th>HARGA</th>
-						<th>BERAT</th>
+
 						<th>JUMLAH</th>
-						<th>SUBBERAT</th>
+
 						<th>SUBTOTAL</th>
 					</tr>
 				</thead>
@@ -113,9 +111,9 @@ if (!isset($_SESSION['pelanggan']))
 							<td><?php echo $nomor; ?></td>
 							<td><?php echo $pecah['nama']; ?></td>
 							<td>Rp.<?php echo number_format($pecah['harga']); ?></td>
-							<td><?php echo $pecah['berat'] ?>Gr</td>	
+		
 							<td><?php echo $pecah['jumlah']; ?></td>
-							<td><?php echo $pecah['subberat']; ?>Gr	</td>
+
 							<td>Rp.<?php echo number_format($pecah['subharga']); ?></td>
 						</tr>
 						<?php $nomor++ ?>
