@@ -5,7 +5,7 @@
 				<h3 class="center light grey-text text-darken-3"style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);"> Tentang Kami</h3>
 				<div class="col m6 light">
 					<h5><b> ExMountain</b></h5>
-					<p id="co" style="font-size:20px; font-family:poppins;">Halo! Kami adalah tim ExMountain, yang siap membawa Anda pada petualangan mendaki gunung 
+					<p id="co" style="font-size:20px; font-family:poppins;">Halo! Kami adalah tim ExMountain yang berbasis di Jakarta. Dari sini, kami akan  membawa Anda pada petualangan mendaki gunung 
 						yang tak terlupakan. Kami menyediakan informasi lengkap tentang gunung-guung menarik, rute pendakian yang seru, 
 						dan tips untuk perjalanan Anda. Tidak hanya itu, kami juga menyelenggarakan opentrip untuk memudahkan 
 						Anda menjelajahi keindahan alam. Jangan khawatir jika Anda belum memiliki peralatan, 
