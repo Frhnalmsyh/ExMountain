@@ -10,7 +10,6 @@
 				<ul>
 					<li><a class="white-text" href="https://www.youtube.com/@kaseps8304/videos"><i class="fa fa-envelope">  | Email</i></a></li>
 					<li><a class="white-text" href="https://www.youtube.com/@kaseps8304/videos"><i class="fa fa-youtube-play">   | Youtube</i></a></li>
-					<li><a class="white-text" href="#"><i class="fa fa-credit-card">   | Credit Card</i></a></li>
 				</ul>
 			</div>
 			<div class="col l3 s12">

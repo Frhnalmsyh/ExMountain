@@ -65,7 +65,7 @@ if (!isset($_SESSION['pelanggan']))
 			?>
 			<div class="row">
 				<div class="col s12">
-					<div class="card-panel red hoverable">
+					<div class="card-panel grey hoverable">
 						<span class="white-text">
 							<div class="row">
 								<div class="col s4">

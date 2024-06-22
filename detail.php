@@ -48,7 +48,7 @@ $detail =$ambil->fetch_assoc();
 								<input placeholder="Jumlah" min="1" max="<?php echo $detail["stok_produk"]; ?>" type="number" class="form-control" name="jumlah" >
 							</div>
 							<div class="input-field col s6 right-align">
-								<button class="btn" name="beli" style="background-color:#074A2A; border-radius:8px;">beli</button>
+								<button class="btn" name="beli" style="background-color:#074A2A; border-radius:8px;">Pesan</button>
 							</div>
 						</div>
 						<h7><?php echo $detail['deskripsi_produk']?></h7>

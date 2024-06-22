@@ -57,7 +57,7 @@
  						<td><?php echo 	$pecah['status_pembelian'] ;?>
   						<br>
  						<?php if (!empty($pecah['resi_pengiriman'])): ?>
- 							Resi : <?php echo $pecah['resi_pengiriman']; ?>
+ 							Link Grup : <?php echo $pecah['resi_pengiriman']; ?>
  						<?php endif ?>
  					</td>
  					<td>Rp.<?php echo 	number_format($pecah['total_pembelian']) ;?></td>
